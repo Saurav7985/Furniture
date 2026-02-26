@@ -1,0 +1,70 @@
+.furniture-hero {
+  min-height: 100vh;
+  background: #f5f1eb;   // warm luxury tone
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 8%;
+  position: relative;
+  overflow: hidden;
+
+  &__container {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    gap: 50px;
+    z-index: 2;
+  }
+
+  &__left {
+    flex: 1;
+
+    h1 {
+      font-size: 54px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #2d2d2d;
+    }
+  }
+
+  &__right {
+    flex: 1;
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #555;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__btn {
+    padding: 12px 30px;
+    background: #8b6f47;   // wooden brown color
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    &:hover {
+      background: #6f5637;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+  }
+
+  &__image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 45%;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}
