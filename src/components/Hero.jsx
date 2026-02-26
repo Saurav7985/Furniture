@@ -5,14 +5,12 @@ const Hero = () => {
     <section className="furniture-hero">
       <div className="furniture-hero__container">
 
-        <div className="furniture-hero__left">
+        <div className="furniture-hero__content">
           <h1>
             Crafted Comfort <br />
             For Modern Living
           </h1>
-        </div>
 
-        <div className="furniture-hero__right">
           <p>
             Discover premium furniture designed to bring elegance,
             comfort, and timeless beauty into your home. From modern
@@ -25,15 +23,14 @@ const Hero = () => {
           </button>
         </div>
 
-      </div>
+        <div className="furniture-hero__image">
+          <img
+            src="https://images.unsplash.com/photo-1732801134112-23827e7cbd0d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjZ8fHdvb2QlMjBmdXJuaXR1cmV8ZW58MHx8MHx8fDA%3D"
+            alt="Luxury Furniture"
+          />
+        </div>
 
-      <div className="furniture-hero__image">
-        <img 
-          src="https://images.unsplash.com/photo-1769750685213-67ee9e56ab6e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Luxury Furniture"
-        />
       </div>
-      
     </section>
   )
 }
