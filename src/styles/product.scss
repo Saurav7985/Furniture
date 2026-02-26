@@ -1,11 +1,14 @@
 .products {
   padding: 80px 8%;
+  
   background: #ffffff;
 
   &__title {
     text-align: center;
     font-size: 36px;
     margin-bottom: 50px;
+    text-transform: uppercase;
+    
     color: #2d2d2d;
   }
 

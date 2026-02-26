@@ -1,19 +1,24 @@
 .contact {
-  padding: 80px 8%;
+  padding: 60px 8%;  
+  border-radius: 8px;
   background: #f5f1eb;
   text-align: center;
-
-  h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
-    color: #2d2d2d;
-  }
 
   form {
     max-width: 500px;
     margin: auto;
+    padding: 30px;
+    ;
+    border-radius: 20px;
+    background: #a8b673c6;
   }
-
+  
+  h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #2d2d2d;
+    
+  }
   .form-group {
     margin-bottom: 20px;
     text-align: left;

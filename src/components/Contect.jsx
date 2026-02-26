@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 const Contect = () => {
 
- const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
@@ -89,10 +89,12 @@ const Contect = () => {
 
 
   return (
- <section className="contact">
-      <h2>Get In Touch</h2>
+    <section className="contact">
 
       <form onSubmit={handleSubmit} noValidate>
+
+        <h2>Get In Touch</h2>
+
         <div className="form-group">
           <input
             type="text"
@@ -150,7 +152,7 @@ const Contect = () => {
         )}
       </form>
     </section>
-  
+
   )
 }
 

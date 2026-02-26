@@ -10,7 +10,7 @@ const Footer = () => {
 
         {/* Brand */}
         <div className="footer__brand">
-          <h2>WoodCraft</h2>
+          <h2>Vinayak</h2>
           <p>Crafting comfort & elegance for modern homes.</p>
         </div>
 
@@ -25,7 +25,7 @@ const Footer = () => {
         {/* Contact Info */}
         <div className="footer__contact">
           <h3>Contact Us</h3>
-          <p>Email: support@woodcraft.com</p>
+          <p>Email: vinayak@gmail.com</p>
           <p>Phone: +91 98765 43210</p>
           <p>Bhopal, Madhya Pradesh</p>
         </div>
@@ -42,7 +42,7 @@ const Footer = () => {
           </div>
 
       <div className="footer__bottom">
-        © {new Date().getFullYear()} WoodCraft. All Rights Reserved.
+        © {new Date().getFullYear()} Vinayak. All Rights Reserved.
       </div>
 
     </footer>

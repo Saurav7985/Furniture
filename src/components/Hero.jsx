@@ -33,6 +33,7 @@ const Hero = () => {
           alt="Luxury Furniture"
         />
       </div>
+      
     </section>
   )
 }

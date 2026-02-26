@@ -32,7 +32,7 @@ const Products = () => {
 
   return (
      <section className="products">
-      <h2 className="products__title">Our Collection</h2>
+      <h2 className="products__title">Collections</h2>
 
       <div className="products__grid">
         {products.map((item) => (

@@ -6,7 +6,7 @@ const Navbar = () => {
     
    <header className="navbar">
       <div className="navbar__logo">
-        <h2>MyWebsite</h2>
+        <h2>Vinayak</h2>
       </div>
 
       <nav className="navbar__links">
@@ -15,7 +15,7 @@ const Navbar = () => {
         <a href="/contact">Contact</a>
       </nav>
 
-      <div className="navbar__actions">
+      {/* <div className="navbar__actions">
         <input
           type="text"
           placeholder="Search..."
@@ -23,7 +23,8 @@ const Navbar = () => {
         />
         <button className="btn login">Login</button>
         <button className="btn signup">Sign Up</button>
-      </div>
+      </div> */}
+
     </header>
   
   )
