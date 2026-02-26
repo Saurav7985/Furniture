@@ -1,29 +1,30 @@
 .contact {
-  padding: 60px 8%;  
+  padding: 60px 8%;
   border-radius: 8px;
   background: #f5f1eb;
   text-align: center;
 
-  form {
-    max-width: 500px;
-    margin: auto;
-    padding: 30px;
-    ;
-    border-radius: 20px;
-    background: #cad992c6;
-  }
-  
   h2 {
     font-size: 36px;
     margin-bottom: 40px;
     color: #2d2d2d;
-    
   }
+
+  form {
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    padding: 30px;
+    border-radius: 20px;
+    background: #cad992c6;
+  }
+
   .form-group {
     margin-bottom: 20px;
     text-align: left;
 
-    input, textarea {
+    input,
+    textarea {
       width: 100%;
       padding: 12px;
       border: 1px solid #ccc;
@@ -35,6 +36,11 @@
       &:focus {
         border-color: #8b6f47;
       }
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
     }
 
     .error {
@@ -69,5 +75,49 @@
     margin-top: 15px;
     color: green;
     font-weight: 600;
+  }
+
+  /* ========================= */
+  /* 📱 Mobile Devices */
+  /* ========================= */
+  @media (max-width: 768px) {
+    padding: 40px 5%;
+
+    h2 {
+      font-size: 26px;
+      margin-bottom: 25px;
+    }
+
+    form {
+      padding: 20px;
+      border-radius: 15px;
+    }
+
+    .form-group {
+      input,
+      textarea {
+        font-size: 13px;
+        padding: 10px;
+      }
+    }
+
+    button {
+      padding: 10px;
+    }
+  }
+
+  /* ========================= */
+  /* 📱 Small Mobile */
+  /* ========================= */
+  @media (max-width: 480px) {
+    padding: 30px 4%;
+
+    h2 {
+      font-size: 22px;
+    }
+
+    form {
+      padding: 15px;
+    }
   }
 }

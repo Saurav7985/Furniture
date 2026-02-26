@@ -2,9 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
+  padding: 15px clamp(20px, 5vw, 60px);
   background-color: #111;
   color: #fff;
+  position: relative;
 
   &__logo {
     h2 {
@@ -22,13 +23,11 @@
       text-decoration: none;
       color: #fff;
       font-weight: 500;
-      transition: .3s;
+      transition: 0.3s;
 
       &:hover {
-        scale: .9;
-        text-decoration: none;
+        transform: scale(0.9);
         color: #ff4d4d;
-       
       }
     }
   }
@@ -44,9 +43,61 @@
     border-radius: 4px;
     border: none;
     outline: none;
+    width: 160px;
+  }
+
+  /* Hamburger Icon */
+  &__toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  /* ========================= */
+  /* 📱 Tablet */
+  /* ========================= */
+  @media (max-width: 992px) {
+    &__links {
+      gap: 2rem;
+    }
+
+    &__search {
+      width: 130px;
+    }
+  }
+
+  /* ========================= */
+  /* 📱 Mobile */
+  /* ========================= */
+  @media (max-width: 768px) {
+    &__toggle {
+      display: block;
+    }
+
+    &__links {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: #111;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 20px 0;
+      display: none;
+    }
+
+    &__links.active {
+      display: flex;
+    }
+
+    &__actions {
+      display: none;
+    }
   }
 }
 
+/* Buttons */
 .btn {
   padding: 6px 14px;
   border-radius: 4px;

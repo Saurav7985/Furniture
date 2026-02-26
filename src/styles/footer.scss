@@ -10,7 +10,8 @@
     padding: 0 8% 40px;
   }
 
-  h2, h3 {
+  h2,
+  h3 {
     margin-bottom: 15px;
   }
 
@@ -51,5 +52,67 @@
     padding: 15px;
     background: #1f1f1f;
     font-size: 14px;
+  }
+
+  /* ========================= */
+  /* 📱 Tablet Devices */
+  /* ========================= */
+  @media (max-width: 992px) {
+    &__container {
+      gap: 30px;
+      padding: 0 6% 30px;
+    }
+
+    h2 {
+      font-size: 22px;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+  }
+
+  /* ========================= */
+  /* 📱 Mobile Devices */
+  /* ========================= */
+  @media (max-width: 768px) {
+    padding-top: 40px;
+
+    &__container {
+      grid-template-columns: 1fr;
+      text-align: center;
+      padding: 0 5% 30px;
+    }
+
+    .social-icons {
+      justify-content: center;
+    }
+
+    a {
+      margin-bottom: 10px;
+    }
+  }
+
+  /* ========================= */
+  /* 📱 Small Mobile */
+  /* ========================= */
+  @media (max-width: 480px) {
+    &__container {
+      padding: 0 4% 25px;
+      gap: 25px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+
+    &__bottom {
+      font-size: 12px;
+      padding: 12px;
+    }
   }
 }
